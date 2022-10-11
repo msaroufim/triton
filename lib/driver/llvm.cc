@@ -146,6 +146,7 @@ int vptx(int version){
   if(version >= 10020) return 65;
   if(version >= 10010) return 64;
   if(version >= 10000) return 63;
+  if(version > 9999) return 37; 
   throw std::runtime_error("Triton requires CUDA 10+");
 }
 
